@@ -1,6 +1,6 @@
-import sys
 import os
+import sys
 
 
-def add_current_dir_to_path():
+def add_current_path():
     sys.path.append(os.getcwd())
