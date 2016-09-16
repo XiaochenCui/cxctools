@@ -1,4 +1,4 @@
-def cfor(first, test, update):
+def c_for(first, test, update):
     while test(first):
         yield first
         first = update(first)

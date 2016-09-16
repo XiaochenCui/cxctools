@@ -6,7 +6,7 @@ class Queue(object):
         return self.items == []
 
     def en_queue(self, item):
-        self.items.insert(0,item)
+        self.items.insert(0, item)
 
     def de_queue(self):
         return self.items.pop()

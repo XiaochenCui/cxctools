@@ -1,33 +1,31 @@
 import operator
 from collections import defaultdict
 
-from functools import cmp_to_key
-
 
 # sort a dict by key and return a sorted list
 def sort_key(dic, reverse=False):
-    assert type(dic) in{dict,defaultdict}
+    assert type(dic) in {dict, defaultdict}
     sorted_dic = sorted(dic.items(), key=operator.itemgetter(0), reverse=reverse)
     return sorted_dic
 
 
 # sort a dict by value and return a sorted list
 def sort_val(dic, reverse=False):
-    assert type(dic) in{dict,defaultdict}
+    assert type(dic) in {dict, defaultdict}
     sorted_dic = sorted(dic.items(), key=operator.itemgetter(1), reverse=reverse)
     return sorted_dic
 
 
 # sort a dict by len of key and return a sorted list
 def sort_len_key(dic, reverse=False):
-    assert type(dic) in{dict,defaultdict}
+    assert type(dic) in {dict, defaultdict}
     sorted_dic = sorted(dic, key=lambda k: len(k), reverse=reverse)
     return [(i, dic[i]) for i in sorted_dic]
 
 
 # sort a dict by len of value and return a sorted list
 def sort_len_val(dic, reverse=False):
-    assert type(dic) in{dict,defaultdict}
+    assert type(dic) in {dict, defaultdict}
     sorted_dic = sorted(dic, key=lambda k: len(dic[k]), reverse=reverse)
     return [(i, dic[i]) for i in sorted_dic]
 
