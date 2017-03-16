@@ -12,3 +12,20 @@ def to_str(bytes_or_str):
     else:
         value = bytes_or_str
     return value  # Instance of str
+
+
+def char_at(s, index):
+    """
+    Return the str[index] in int class.
+
+    Args:
+        s:
+        index:
+    Returns:
+        value (int): the int value of s[index], -1 for IndexError.
+    """
+    if index < len(s):
+        value = ord(s[index])
+    else:
+        value = -1
+    return value
