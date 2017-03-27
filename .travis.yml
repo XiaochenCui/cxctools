@@ -4,5 +4,6 @@ python:
   - "3.5"
   - "3.6"
   - "nightly" # currently points to 3.7-dev
-install: pip install nose
-script: nosetests
+script:
+  - flake8 --ignore=E501
+  - nosetests

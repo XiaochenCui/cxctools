@@ -7,7 +7,7 @@ def serialize_instance(obj):
     Returns:
         dict
     """
-    d = {'__classname__': type(obj).__name__,}
+    d = {'__classname__': type(obj).__name__, }
     if isinstance(d, list):
         for i in d:
             d[id(i)] = serialize_instance(i)
@@ -18,7 +18,7 @@ def serialize_instance(obj):
 
 
 def serialize_list(l):
-    d = {'__classname__': type(l).__name__,}
+    d = {'__classname__': type(l).__name__, }
     for i in l:
         if isinstance(i, list):
             d[id(i)] = serialize_list(i)

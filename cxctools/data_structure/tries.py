@@ -1,6 +1,5 @@
-from cxctools.string import char_at
-
 from cxctools.data_structure.queue import Queue
+from cxctools.string import char_at
 
 
 class Node(object):
@@ -91,6 +90,6 @@ class TrieST(object):
 
 if __name__ == '__main__':
     t = TrieST()
-    t['test']=1
+    t['test'] = 1
     print(t['test'])
     print(t.keys())

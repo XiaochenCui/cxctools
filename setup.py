@@ -1,6 +1,7 @@
-from setuptools import setup, find_packages
 from codecs import open
 from os import path
+
+from setuptools import setup, find_packages
 
 here = path.abspath(path.dirname(__file__))
 
@@ -41,7 +42,7 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='toolkit',
-    packages=find_packages(exclude=["*.tests","*.tests.*"]),
+    packages=find_packages(exclude=["*.tests", "*.tests.*"]),
     entry_points={
         'console_scripts': [
             'cxctools=cxctools:main',
