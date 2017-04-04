@@ -10,12 +10,12 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='cxctools',
+    name='toolkit-cxc',
     version='0.0.2',
-    description='CuiXiaochen\'s personal toolkit',
+    description='Xiaochen Cui\'s personal toolkit',
     long_description=long_description,
-    url='https://github.com/XiaochenCui/cxctools',
-    author='Cui Xiaochen',
+    url='https://github.com/XiaochenCui/toolkit_cxc',
+    author='Xiaochen Cui',
     author_email='jcnlcxc.new@gmail.com',
     license='MIT',
     classifiers=[
@@ -44,7 +44,7 @@ setup(
     packages=find_packages(exclude=["*.tests", "*.tests.*"]),
     entry_points={
         'console_scripts': [
-            'cxctools=cxctools:main',
+            'testentry=toolkit_cxc:main',
         ],
     },
 )
