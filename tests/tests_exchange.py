@@ -1,4 +1,4 @@
-from cxctools.exchange import exch
+from toolkit_cxc.exchange import exch
 
 
 def tests_exch():
