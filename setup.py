@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='toolkit-cxc',
-    version='0.0.2',
+    version='0.0.3',
     description='Xiaochen Cui\'s personal toolkit',
     long_description=long_description,
     url='https://github.com/XiaochenCui/toolkit_cxc',

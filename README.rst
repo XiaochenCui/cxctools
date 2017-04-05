@@ -1,7 +1,7 @@
 CuiXiaochen's personal toolkit.
 ===============================
-.. image:: https://travis-ci.org/XiaochenCui/cxctools.svg?branch=master
-    :target: https://travis-ci.org/XiaochenCui/cxctools
+.. image:: https://travis-ci.org/XiaochenCui/toolkit_cxc.svg?branch=master
+    :target: https://travis-ci.org/XiaochenCui/toolkit_cxc
 
 This is a toolkit for myself.
 
