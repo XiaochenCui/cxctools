@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='toolkit-cxc',
-    version='0.0.3',
+    version='0.1.0',
     description='Xiaochen Cui\'s personal toolkit',
     long_description=long_description,
     url='https://github.com/XiaochenCui/toolkit_cxc',
@@ -41,7 +41,15 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='toolkit',
-    packages=find_packages(exclude=["*.tests", "*.tests.*"]),
+    packages=find_packages(exclude=["tests", ]),
+    # List additional groups of dependencies here (e.g. development
+    # dependencies). You can install these using the following syntax,
+    # for example:
+    # $ pip install -e .[dev,test]
+    extras_require={
+        'dev': ['check-manifest'],
+        'test': ['coverage'],
+    },
     entry_points={
         'console_scripts': [
             'testentry=toolkit_cxc:main',
