@@ -48,7 +48,7 @@ setup(
     # $ pip install -e .[dev,test]
     extras_require={
         'dev': ['check-manifest'],
-        'test': ['coverage'],
+        'test': ['nose', 'coverage'],
     },
     entry_points={
         'console_scripts': [
