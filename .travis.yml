@@ -8,3 +8,7 @@ install: pip install flake8
 script:
   - flake8 --ignore=E501
   - nosetests
+notifications:
+  email:
+    on_success: never
+    on_failure: never
